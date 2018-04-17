@@ -11,9 +11,19 @@ function frameIt() {
   })
 }
 
+function pressIt() {
+  $(document).on("keydown", function(key) {
+    if(key.which ==71) {
+      alert("You pressed G");
+    }
+  })
+}
+
+
 $(document).ready(function(){
 
 // call functions here
   return getIt();
   return frameIt();
+  return pressIt();
 });
